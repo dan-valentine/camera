@@ -29,7 +29,7 @@ class App extends Component {
     navigator.mediaDevices.enumerateDevices().then(devices => console.log(devices))
     
     if(front) {videoConstraints = {
-      facingMode: { exact: "environment" }
+      facingMode: { exact: "user" }
     }};
     if(back) {
       videoConstraints = {
