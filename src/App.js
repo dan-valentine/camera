@@ -9,7 +9,7 @@ class App extends Component {
     this.state = {
       front: false,
       back: false,
-      chosen: false
+      chosen: null
     }
   }
 
@@ -57,10 +57,13 @@ class App extends Component {
           <button onClick={this.cameraBack}> Back</button>
         </div>
         
-        { chosen ? <Webcam videoConstraints={videoConstraints} />
+        { this.state.chosen ? <Webcam videoConstraints={videoConstraints} />
         : null
         }
-        
+        <br />
+        <br />
+        <br />
+        <br />
         <Webcam videoConstraints={videoConstraints} />
       </div>
     );
