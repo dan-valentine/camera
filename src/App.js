@@ -18,7 +18,7 @@ class App extends Component {
         {/* <p className="App-intro">
           
         </p> */}
-        <Webcam videoConstraints={videoConstraints} />
+        {/* <Webcam videoConstraints={videoConstraints} /> */}
         
         {/* <Webcam /> */}
       </div>
